@@ -7,107 +7,143 @@ const ProductsClientPage = () => {
   const products = [
     {
       id: 1,
+      name: "Premium Hass Avocados (5kg Box)",
+      price: "$25.00",
+      originalPrice: "$30.00",
+      description: "Fresh, creamy Hass avocados grown on our sustainable farm. Perfect ripeness guaranteed.",
+      image: "/product1.png",
+      features: [
+        "5kg of premium Hass avocados",
+        "Sustainably grown",
+        "Perfect ripeness selection",
+        "Rich in healthy fats",
+        "Eco-friendly packaging",
+      ],
+      availability: "In Stock",
+      rating: 4.9,
+      reviews: 89,
+    },
+    {
+      id: 2,
+      name: "Hass Avocados (2kg Box)",
+      price: "$12.00",
+      originalPrice: "ugx15000",
+      description: "Smaller portion perfect for families. Same premium quality Hass avocados from our farm.",
+      image: "/product1.png",
+      features: [
+        "2kg of fresh Hass avocados",
+        "Family-sized portion",
+        "Hand-picked quality",
+        "Nutritious and delicious",
+        "Sustainable farming",
+      ],
+      availability: "In Stock",
+      rating: 4.8,
+      reviews: 67,
+    },
+    {
+      id: 3,
       name: "Full Tray (30 Eggs)",
-      price: "$12.50",
-      originalPrice: "$15.00",
-      description: "Perfect for families and small businesses. Our premium free-range eggs packed fresh daily.",
-      image: "https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg",
+      price: "ugx12000",
+      originalPrice: "ugx15000",
+      description: "Premium free-range eggs from our Netherlands breed chickens. Packed fresh daily.",
+      image: "/product2.png",
       features: [
         "30 fresh free-range eggs",
+        "Netherlands breed chickens",
         "Collected within 24 hours",
         "Organic feed chickens",
         "No antibiotics or hormones",
-        "Recyclable packaging",
       ],
       availability: "In Stock",
       rating: 4.9,
       reviews: 156,
     },
     {
-      id: 2,
+      id: 4,
       name: "Half Tray (15 Eggs)",
-      price: "$6.50",
-      originalPrice: "$8.00",
-      description: "Ideal for smaller households who want fresh eggs without waste. Same quality, perfect portion.",
-      image: "https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg",
+      price: "ugx12000",
+      originalPrice: "ugx1000",
+      description: "Perfect for smaller households. Premium eggs from our Netherlands breed chickens.",
+      image: "/product2.png",
       features: [
         "15 fresh free-range eggs",
+        "Netherlands breed chickens",
         "Perfect for small families",
         "Daily fresh collection",
         "Premium egg quality",
-        "Eco-friendly packaging",
       ],
       availability: "In Stock",
       rating: 4.8,
       reviews: 98,
     },
     {
-      id: 3,
+      id: 5,
       name: "Premium Organic (30 Eggs)",
       price: "$18.00",
       originalPrice: "$22.00",
-      description: "Our premium organic line from chickens with certified organic feed and strict welfare standards.",
-      image: "https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg",
+      description: "Our premium organic line from Netherlands chickens with certified organic feed.",
+      image: "/product2.png",
       features: [
         "30 certified organic eggs",
+        "Netherlands breed chickens",
         "100% organic feed",
         "Pasture-raised chickens",
         "Third-party certified",
-        "Premium quality guarantee",
       ],
       availability: "In Stock",
       rating: 5.0,
       reviews: 43,
     },
     {
-      id: 4,
-      name: "Family Pack (60 Eggs)",
-      price: "$22.00",
-      originalPrice: "$28.00",
-      description: "Great value for large families or small businesses. Two full trays at a discounted price.",
-      image: "https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg",
-      features: [
-        "60 fresh free-range eggs",
-        "Best value option",
-        "Bulk discount applied",
-        "Perfect for businesses",
-        "Extended freshness",
-      ],
-      availability: "In Stock",
-      rating: 4.9,
-      reviews: 87,
-    },
-    {
-      id: 5,
-      name: "Brown Eggs Special (30 Eggs)",
-      price: "$14.00",
-      originalPrice: "$17.00",
-      description: "From our heritage breed hens, these brown eggs offer a richer flavor and deeper yolk color.",
-      image: "https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg",
-      features: [
-        "30 fresh brown eggs",
-        "Heritage breed hens",
-        "Richer flavor profile",
-        "Darker yolk color",
-        "Traditional farming methods",
-      ],
-      availability: "Limited Stock",
-      rating: 4.7,
-      reviews: 62,
-    },
-    {
       id: 6,
+      name: "Fresh Tilapia (2kg)",
+      price: "$18.00",
+      originalPrice: "$22.00",
+      description: "Coming soon! Fresh tilapia from our planned fish ponds. Pre-order now for early access.",
+      image: "/product3.png",
+      features: [
+        "2kg fresh tilapia",
+        "Pond-raised fish",
+        "Sustainable aquaculture",
+        "High protein content",
+        "Chemical-free farming",
+      ],
+      availability: "Pre-Order",
+      rating: 4.7,
+      reviews: 12,
+    },
+    {
+      id: 7,
+      name: "Mixed Fish Pack (3kg)",
+      price: "$28.00",
+      originalPrice: "$35.00",
+      description: "Variety pack of fresh fish from our upcoming aquaculture project. Reserve your order today.",
+      image: "/product3.png",
+      features: [
+        "3kg mixed fresh fish",
+        "Variety of species",
+        "Sustainable fish farming",
+        "Fresh from our ponds",
+        "Nutritious and healthy",
+      ],
+      availability: "Pre-Order",
+      rating: 4.6,
+      reviews: 8,
+    },
+    {
+      id: 8,
       name: "Bulk Supply (Custom)",
       price: "Contact for Quote",
       originalPrice: null,
-      description: "Custom orders for restaurants, hotels, and businesses. Competitive pricing with reliable delivery.",
-      image: "https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg",
+      description: "Custom orders for restaurants, hotels, and businesses. Avocados, eggs, and fish available.",
+      image: "/product1.png",
       features: [
         "Custom quantities available",
+        "All product categories",
         "Wholesale pricing",
         "Regular delivery schedule",
         "Business partnership",
-        "Quality guarantee",
       ],
       availability: "Contact Us",
       rating: 4.8,
@@ -119,7 +155,7 @@ const ProductsClientPage = () => {
     {
       icon: <Truck className="w-6 h-6 text-green-600" />,
       title: "Free Delivery",
-      description: "Free delivery on orders over $15 within Kampala area",
+      description: "Free delivery on orders over $20 within Kampala area",
     },
     {
       icon: <Shield className="w-6 h-6 text-blue-600" />,
@@ -128,12 +164,12 @@ const ProductsClientPage = () => {
     },
     {
       icon: <Clock className="w-6 h-6 text-yellow-600" />,
-      title: "Fresh Daily",
-      description: "Eggs collected daily and delivered within 24-48 hours",
+      title: "Farm Fresh",
+      description: "All products harvested/collected fresh and delivered within 24-48 hours",
     },
   ]
 
-  const whatsappNumber = "256700000000"
+  const whatsappNumber = "256784399514"
 
   const handleWhatsAppOrder = (productName: string, price: string) => {
     const message = `Hi! I'd like to order ${productName} for ${price}. Please provide delivery details.`
@@ -141,14 +177,21 @@ const ProductsClientPage = () => {
     window.open(whatsappUrl, "_blank")
   }
 
+  const calculateDiscount = (originalPrice: string, currentPrice: string) => {
+    const original = Number.parseFloat(originalPrice.replace("$", ""))
+    const current = Number.parseFloat(currentPrice.replace("$", ""))
+    return Math.round(((original - current) / original) * 100)
+  }
+
   return (
     <div className="min-h-screen pt-16">
       {/* Header */}
       <section className="bg-gradient-to-r from-green-600 to-green-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4">Fresh Egg Products</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4">Farm Fresh Products</h1>
           <p className="text-xl text-green-100 max-w-2xl mx-auto">
-            Premium free-range eggs from happy, healthy chickens. Delivered fresh to your doorstep.
+            Premium Hass avocados, fresh eggs from Netherlands chickens, and sustainable fish farming. All delivered
+            fresh to your doorstep.
           </p>
         </div>
       </section>
@@ -194,14 +237,7 @@ const ProductsClientPage = () => {
                   )}
                   {product.originalPrice && product.price !== "Contact for Quote" && (
                     <div className="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 rounded text-sm font-semibold">
-                      Save{" "}
-                      {(
-                        ((Number.parseFloat(product.originalPrice.replace("$", "")) -
-                          Number.parseFloat(product.price.replace("$", ""))) /
-                          Number.parseFloat(product.originalPrice.replace("$", ""))) *
-                        100
-                      ).toFixed(0)}
-                      %
+                      Save {calculateDiscount(product.originalPrice, product.price)}%
                     </div>
                   )}
                 </div>
@@ -265,13 +301,13 @@ const ProductsClientPage = () => {
         </div>
       </section>
 
-      {/* Why Choose Our Eggs */}
+      {/* Why Choose Our Products */}
       <section className="py-16 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Why Choose Our Eggs?</h2>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Why Choose Our Farm Products?</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Our commitment to quality and sustainability makes all the difference.
+              Our commitment to sustainable farming and quality across all our product lines makes the difference.
             </p>
           </div>
 
@@ -280,9 +316,10 @@ const ProductsClientPage = () => {
               <div className="bg-green-100 dark:bg-green-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="w-8 h-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Free-Range Happy Chickens</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Sustainable Avocado Farming</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Our chickens roam freely on 50 acres of natural grassland, resulting in healthier, more nutritious eggs.
+                Our Hass avocados are grown using sustainable practices, ensuring premium quality and environmental
+                responsibility.
               </p>
             </div>
 
@@ -290,9 +327,10 @@ const ProductsClientPage = () => {
               <div className="bg-yellow-100 dark:bg-yellow-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield className="w-8 h-8 text-yellow-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">No Antibiotics or Hormones</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Netherlands Breed Chickens</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                We use only natural, organic feed without any artificial additives, ensuring pure, healthy eggs.
+                Our eggs come from premium Netherlands breed chickens, raised free-range with organic feed and no
+                artificial additives.
               </p>
             </div>
 
@@ -300,9 +338,10 @@ const ProductsClientPage = () => {
               <div className="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Farm Fresh Daily</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Expanding to Aquaculture</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Eggs are collected daily and delivered within 24-48 hours for maximum freshness and nutrition.
+                We're developing sustainable fish ponds to provide fresh, chemical-free fish alongside our existing
+                products.
               </p>
             </div>
           </div>
@@ -312,15 +351,15 @@ const ProductsClientPage = () => {
       {/* Call to Action */}
       <section className="py-16 bg-green-600 dark:bg-green-800 text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-4">Ready to Order Fresh Eggs?</h2>
+          <h2 className="text-3xl font-bold mb-4">Ready to Order Fresh Farm Products?</h2>
           <p className="text-xl mb-8 text-green-100">
-            Contact us via WhatsApp for quick ordering and delivery coordination.
+            Contact us via WhatsApp for avocados, eggs, fish pre-orders, and delivery coordination.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() =>
                 window.open(
-                  `https://wa.me/${whatsappNumber}?text=Hi! I'd like to place an order for fresh eggs. Please send me your current availability and pricing.`,
+                  `https://wa.me/${whatsappNumber}?text=Hi! I'd like to place an order for your farm products. Please send me your current availability and pricing.`,
                   "_blank",
                 )
               }
@@ -330,10 +369,10 @@ const ProductsClientPage = () => {
               <span>Order via WhatsApp</span>
             </button>
             <a
-              href="tel:+256700000000"
+              href="tel:+256784399514"
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-green-600 font-semibold py-3 px-8 rounded-lg transition-colors duration-300"
             >
-              Call Us: +256 700 000 000
+              Call Us: +256 393 254 185
             </a>
           </div>
         </div>

@@ -1,9 +1,10 @@
-import Image from 'next/image'
-import { Users, Award, Leaf, Heart, Target, Clock } from 'lucide-react'
+import Image from "next/image"
+import { Users, Award, Leaf, Heart, Target, Clock } from "lucide-react"
 
 export const metadata = {
-  title: 'About Us - Akubuuza Farm Products',
-  description: 'Learn about our sustainable farming practices, family heritage, and commitment to providing fresh, natural eggs to our community.',
+  title: "About Us - Akubuuza Farm Products",
+  description:
+    "Learn about our sustainable farming practices, founder Esther Mbayo Mbulakubuza, and commitment to providing fresh avocados, eggs, and fish to our community.",
 }
 
 const AboutPage = () => {
@@ -11,46 +12,50 @@ const AboutPage = () => {
     {
       icon: <Heart className="w-8 h-8 text-red-500" />,
       title: "Freshness",
-      description: "Every egg is collected daily and reaches you within 24-48 hours for maximum freshness and nutrition."
+      description:
+        "Every product is harvested or collected daily and reaches you within 24-48 hours for maximum freshness and nutrition.",
     },
     {
       icon: <Award className="w-8 h-8 text-yellow-500" />,
       title: "Quality",
-      description: "Rigorous quality control ensures only the finest eggs make it to your table, meeting the highest standards."
+      description:
+        "Rigorous quality control ensures only the finest avocados, eggs, and fish make it to your table, meeting the highest standards.",
     },
     {
       icon: <Users className="w-8 h-8 text-green-600" />,
       title: "Community Impact",
-      description: "Supporting local employment and contributing to food security while building lasting relationships."
+      description:
+        "Supporting local employment and contributing to food security while building lasting relationships.",
     },
     {
       icon: <Leaf className="w-8 h-8 text-green-600" />,
       title: "Sustainability",
-      description: "Environmentally conscious farming practices that protect our land for future generations."
-    }
+      description: "Environmentally conscious farming practices that protect our land for future generations.",
+    },
   ]
 
   const milestones = [
     {
-      year: "1985",
+      year: "2018",
       title: "Farm Established",
-      description: "Started with just 50 chickens and a dream to provide fresh eggs to our community."
+      description:
+        "Founded by Esther Mbayo Mbulakubuza with a vision to provide fresh, quality produce to our community.",
     },
     {
-      year: "2000",
-      title: "Organic Certification",
-      description: "Became certified organic, committing to natural farming practices without chemicals."
+      year: "2020",
+      title: "Hass Avocado Cultivation",
+      description: "Began cultivating premium Hass avocados, establishing ourselves as a quality fruit producer.",
     },
     {
-      year: "2015",
-      title: "Expanded Operations",
-      description: "Grew to 5,000 free-range chickens and began supplying major retailers and restaurants."
+      year: "2022",
+      title: "Netherlands Chicken Import",
+      description: "Imported high-quality chickens from Netherlands to enhance our egg production capabilities.",
     },
     {
       year: "2024",
-      title: "Digital Presence",
-      description: "Launched our online platform to better serve customers with direct farm-to-table delivery."
-    }
+      title: "Fish Farming Initiative",
+      description: "Planning to expand into sustainable fish farming to diversify our product offerings.",
+    },
   ]
 
   return (
@@ -60,33 +65,32 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-                Our Story
-              </h1>
+              <h1 className="text-4xl sm:text-5xl font-bold mb-6">Our Story</h1>
               <p className="text-xl text-green-100 mb-8 leading-relaxed">
-                For nearly four decades, Akubuuza Farm has been a trusted name in sustainable agriculture. 
-                What started as a small family farm has grown into a cornerstone of the community, 
-                providing fresh, nutritious eggs while maintaining our commitment to ethical farming practices.
+                Founded by Esther Mbayo Mbulakubuza, Akubuuza Farm has grown from a vision into a thriving agricultural
+                enterprise. Under her leadership as Director and Senior Accountant, we've built a sustainable farm
+                specializing in Hass avocados, premium eggs from Netherlands chickens, and planning innovative fish
+                farming operations.
               </p>
               <div className="flex items-center space-x-8 text-green-100">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-yellow-400">39+</div>
+                  <div className="text-3xl font-bold text-yellow-400">6+</div>
                   <div className="text-sm">Years Experience</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-yellow-400">5000+</div>
-                  <div className="text-sm">Happy Chickens</div>
+                  <div className="text-3xl font-bold text-yellow-400">3</div>
+                  <div className="text-sm">Product Lines</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-yellow-400">1000+</div>
-                  <div className="text-sm">Daily Customers</div>
+                  <div className="text-3xl font-bold text-yellow-400">500+</div>
+                  <div className="text-sm">Happy Customers</div>
                 </div>
               </div>
             </div>
             <div className="relative">
-              <Image
-                src="https://images.pexels.com/photos/1405930/pexels-photo-1405930.jpeg"
-                alt="Farm family working together"
+              <Image  
+                src="/one.jpg"
+                alt="Esther Mbayo Mbulakubuza and farm operations"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-2xl"
@@ -107,38 +111,39 @@ const AboutPage = () => {
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Our Mission</h2>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  To provide the freshest, most nutritious eggs while maintaining the highest standards 
-                  of animal welfare and environmental stewardship. We believe that healthy, happy chickens 
-                  produce the best eggs, and our mission is to deliver this quality directly to your family's table.
+                  To provide the freshest Hass avocados, most nutritious eggs, and quality fish while maintaining the
+                  highest standards of sustainable farming and animal welfare. We believe in delivering premium
+                  agricultural products that nourish families and strengthen our community.
                 </p>
               </div>
-              
+
               <div className="bg-yellow-50 dark:bg-yellow-900/20 p-8 rounded-xl">
                 <div className="flex items-center mb-4">
                   <Clock className="w-8 h-8 text-yellow-600 mr-3" />
                   <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Our Vision</h2>
                 </div>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  To become the leading example of sustainable agriculture in Uganda, demonstrating that 
-                  farming can be both profitable and environmentally responsible. We envision a future where 
-                  every family has access to fresh, ethically produced food that nourishes both body and community.
+                  To become Uganda's leading diversified farm, demonstrating excellence in avocado cultivation, poultry
+                  farming, and aquaculture. We envision a future where sustainable agriculture provides economic
+                  opportunities while preserving our environment for generations to come.
                 </p>
               </div>
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
-                Sustainable Farming Practices
-              </h2>
-              
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Sustainable Farming Practices</h2>
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="bg-green-600 p-2 rounded-full mt-1">
                     <Leaf className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Free-Range Environment</h3>
-                    <p className="text-gray-600 dark:text-gray-300">Our chickens roam freely on 50 acres of natural grassland, ensuring they get plenty of exercise and natural nutrition.</p>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Premium Hass Avocados</h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Our avocado trees are carefully tended using organic methods, producing nutrient-rich fruit with
+                      exceptional taste.
+                    </p>
                   </div>
                 </div>
 
@@ -147,8 +152,13 @@ const AboutPage = () => {
                     <Award className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Chemical-Free Feed</h3>
-                    <p className="text-gray-600 dark:text-gray-300">We use only organic, locally-sourced grains and supplements, free from antibiotics and artificial growth hormones.</p>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                      Netherlands Chicken Breeds
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      We imported high-quality chickens from Netherlands, ensuring superior egg production with
+                      excellent nutritional value.
+                    </p>
                   </div>
                 </div>
 
@@ -157,8 +167,13 @@ const AboutPage = () => {
                     <Heart className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Animal Welfare</h3>
-                    <p className="text-gray-600 dark:text-gray-300">Our chickens enjoy spacious coops, natural lighting, and veterinary care to ensure their health and happiness.</p>
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                      Sustainable Fish Farming
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      Our planned fish ponds will use eco-friendly aquaculture methods to provide fresh, healthy fish to
+                      our community.
+                    </p>
                   </div>
                 </div>
 
@@ -168,7 +183,10 @@ const AboutPage = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Community Employment</h3>
-                    <p className="text-gray-600 dark:text-gray-300">We provide stable employment for 25+ local families, contributing to community economic growth.</p>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      We provide stable employment opportunities, contributing to local economic development and skills
+                      training.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -181,9 +199,7 @@ const AboutPage = () => {
       <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Our Core Values
-            </h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Our Core Values</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               These principles guide everything we do, from caring for our chickens to serving our customers.
             </p>
@@ -193,15 +209,9 @@ const AboutPage = () => {
             {values.map((value, index) => (
               <div key={index} className="text-center">
                 <div className="bg-white dark:bg-gray-700 p-8 rounded-xl card-shadow hover:shadow-xl transition-all duration-300">
-                  <div className="mb-6 flex justify-center">
-                    {value.icon}
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                    {value.title}
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    {value.description}
-                  </p>
+                  <div className="mb-6 flex justify-center">{value.icon}</div>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">{value.title}</h3>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{value.description}</p>
                 </div>
               </div>
             ))}
@@ -213,11 +223,9 @@ const AboutPage = () => {
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Our Journey
-            </h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Our Journey</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              From humble beginnings to becoming a trusted name in sustainable farming.
+              From Esther's vision to a thriving diversified agricultural enterprise.
             </p>
           </div>
 
@@ -225,8 +233,11 @@ const AboutPage = () => {
             <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-green-600"></div>
             <div className="space-y-12">
               {milestones.map((milestone, index) => (
-                <div key={index} className={`relative flex items-center ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-                  <div className={`w-full lg:w-1/2 ${index % 2 === 0 ? 'lg:pr-8' : 'lg:pl-8'}`}>
+                <div
+                  key={index}
+                  className={`relative flex items-center ${index % 2 === 0 ? "justify-start" : "justify-end"}`}
+                >
+                  <div className={`w-full lg:w-1/2 ${index % 2 === 0 ? "lg:pr-8" : "lg:pl-8"}`}>
                     <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
                       <div className="text-green-600 text-xl font-bold mb-2">{milestone.year}</div>
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{milestone.title}</h3>
@@ -241,40 +252,66 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Family Touch */}
+      {/* Founder Section */}
       <section className="py-20 bg-green-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <Image
-                src="https://images.pexels.com/photos/1422220/pexels-photo-1422220.jpeg"
-                alt="Farm family portrait"
+                src="/director.jpeg"
+                alt="Esther Mbayo Mbulakubuza, Founder and Director"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-xl"
               />
             </div>
             <div className="space-y-6">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
-                A Family Legacy
-              </h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">Meet Our Founder</h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                Akubuuza Farm is more than just a business—it's a family legacy passed down through three generations. 
-                Founded by our grandfather in 1985, the farm has remained committed to the values of hard work, 
-                integrity, and community service.
+                Esther Mbayo Mbulakubuza founded Akubuuza Farm with a vision to transform agriculture in our community.
+                As our Director and Senior Accountant, she brings both agricultural passion and financial expertise to
+                ensure sustainable growth and profitability.
               </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                Today, we continue to honor that legacy while embracing modern sustainable farming techniques. 
-                Every egg that leaves our farm carries with it the care and dedication of our family, 
-                ensuring that your family receives nothing but the best.
+                Under her leadership, Akubuuza Farm has diversified from a single focus to a multi-product enterprise
+                specializing in Hass avocados, premium eggs from Netherlands chickens, and innovative fish farming. Her
+                commitment to quality and community development continues to drive our success.
               </p>
               <div className="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-lg">
                 <blockquote className="text-gray-900 dark:text-white italic text-lg">
-                  "We don't just raise chickens; we nurture a tradition of excellence that feeds families and builds community."
+                  "Agriculture is not just about growing food; it's about growing communities, opportunities, and a
+                  sustainable future for all."
                 </blockquote>
-                <cite className="text-green-600 font-semibold mt-2 block">- The Akubuuza Family</cite>
+                <cite className="text-green-600 font-semibold mt-2 block">
+                  - Esther Mbayo Mbulakubuza, Founder & Director
+                </cite>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="py-20 bg-white dark:bg-gray-900">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              See Our Farm in Action
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+              Watch this video to get an inside look at our farming operations and commitment to quality.
+            </p>
+          </div>
+
+          <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-xl"
+              src="https://www.youtube.com/embed/NE0U_es5wos"
+              title="Akubuuza Farm Operations"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
           </div>
         </div>
       </section>

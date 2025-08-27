@@ -26,7 +26,7 @@ const Footer = () => {
               <a href="#" className="bg-pink-600 p-2 rounded-full hover:bg-pink-700 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://wa.me/256700000000" className="bg-green-600 p-2 rounded-full hover:bg-green-700 transition-colors">
+              <a href="https://wa.me/256784399514" className="bg-green-600 p-2 rounded-full hover:bg-green-700 transition-colors">
                 <MessageCircle className="w-5 h-5" />
               </a>
             </div>
@@ -65,11 +65,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-yellow-400" />
-                <span className="text-green-100">+256 700 000 000</span>
+                <span className="text-green-100">+256 393 254 185</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-yellow-400" />
-                <span className="text-green-100">info@akubuuzafarm.com</span>
+                <span className="text-green-100">akubuuzafarmproducts.com</span>
               </div>
             </div>
           </div>

@@ -33,13 +33,13 @@ export default function ContactPage() {
     {
       icon: <Phone className="w-6 h-6 text-blue-600" />,
       title: "Phone Number",
-      details: ["+256 700 000 000", "+256 750 000 000"],
+      details: ["+256 393 254 185", "+256 784 399 514"],
       action: "Call Now"
     },
     {
       icon: <Mail className="w-6 h-6 text-purple-600" />,
       title: "Email Address",
-      details: ["info@akubuuzafarm.com", "orders@akubuuzafarm.com"],
+      details: ["akubuuzafarmproducts.com", ""],
       action: "Send Email"
     },
     {
@@ -107,7 +107,7 @@ export default function ContactPage() {
               We'll respond immediately with availability and delivery details.
             </p>
             <button
-              onClick={() => window.open('https://wa.me/256700000000?text=Hi! I would like to place an order for fresh eggs. Please send me your current availability and pricing.', '_blank')}
+              onClick={() => window.open('https://wa.me/256784399514?text=Hi! I would like to place an order for fresh eggs. Please send me your current availability and pricing.', '_blank')}
               className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2 mx-auto"
             >
               <MessageCircle className="w-5 h-5" />
@@ -194,7 +194,7 @@ export default function ContactPage() {
                     type="tel"
                     {...register('phone')}
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
-                    placeholder="+256 700 000 000"
+                    placeholder="+256 393 254 185"
                   />
                 </div>
 

@@ -1,109 +1,109 @@
 "use client"
 
 import Image from "next/image"
-import { Camera, Users, Truck, Award } from "lucide-react"
+import { GraduationCap, Users, Camera, Award } from "lucide-react"
 
 const GalleryClient = () => {
   const galleryCategories = [
     {
-      title: "Our Happy Chickens",
-      icon: <Camera className="w-6 h-6" />,
+      title: "School Visits & Farm Tours",
+      icon: <GraduationCap className="w-6 h-6" />,
       images: [
         {
-          src: "https://images.pexels.com/photos/1472443/pexels-photo-1472443.jpeg",
-          alt: "Free-range chickens in the field",
-          caption: "Our chickens enjoy free-roaming on 50 acres of natural grassland",
+          src: "/one.jpg",
+          alt: "Students learning about farm life",
+          caption: "Students from local schools exploring our sustainable farming practices",
         },
         {
-          src: "https://images.pexels.com/photos/162140/duckling-birds-yellow-fluffy-162140.jpeg",
-          alt: "Baby chicks in the barn",
-          caption: "New arrivals getting ready to join the flock",
+          src: "/two.jpg",
+          alt: "Children interacting with farm animals",
+          caption: "Hands-on learning experience with our friendly farm animals",
         },
         {
-          src: "https://images.pexels.com/photos/1660484/pexels-photo-1660484.jpeg",
-          alt: "Chickens feeding naturally",
-          caption: "Natural feeding behavior in open pastures",
+          src: "/third.jpg",
+          alt: "Educational farm tour in progress",
+          caption: "Interactive educational sessions about agriculture and sustainability",
         },
         {
-          src: "https://images.pexels.com/photos/1250624/pexels-photo-1250624.jpeg",
-          alt: "Rooster watching over hens",
-          caption: "Our protective roosters ensuring flock safety",
+          src: "/six.jpg",
+          alt: "Group photo with visiting students",
+          caption: "Memorable moments with our young visitors",
         },
       ],
     },
     {
-      title: "Our Dedicated Team",
+      title: "Our Educational Team",
       icon: <Users className="w-6 h-6" />,
       images: [
         {
-          src: "https://images.pexels.com/photos/1422220/pexels-photo-1422220.jpeg",
-          alt: "Farm workers feeding chickens",
-          caption: "Daily care and feeding by our experienced team",
+          src: "/four.jpg",
+          alt: "Farm educator teaching students",
+          caption: "Our experienced team sharing knowledge with young learners",
         },
         {
-          src: "https://images.pexels.com/photos/1405930/pexels-photo-1405930.jpeg",
-          alt: "Veterinarian checking chicken health",
-          caption: "Regular health checks ensure optimal chicken welfare",
+          src: "/fifth.jpg",
+          alt: "Team member demonstrating farming techniques",
+          caption: "Hands-on demonstrations of sustainable farming methods",
         },
         {
-          src: "https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg",
-          alt: "Farm family portrait",
-          caption: "Three generations of farming expertise",
+          src: "/six.jpg",
+          alt: "Farm team welcoming visitors",
+          caption: "Our dedicated team passionate about agricultural education",
         },
         {
-          src: "https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg",
-          alt: "Team meeting in the field",
-          caption: "Daily team coordination for optimal farm management",
+          src: "/seven.jpg",
+          alt: "Team planning educational activities",
+          caption: "Planning engaging activities for our school visitors",
         },
       ],
     },
     {
-      title: "Egg Collection Process",
-      icon: <Award className="w-6 h-6" />,
+      title: "Farm Activities & Learning",
+      icon: <Camera className="w-6 h-6" />,
       images: [
         {
-          src: "https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg",
-          alt: "Fresh eggs in collection baskets",
-          caption: "Daily collection ensures maximum freshness",
+          src: "/four.jpg",
+          alt: "Students participating in farm activities",
+          caption: "Students getting involved in daily farm operations",
         },
         {
-          src: "https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg",
-          alt: "Quality inspection of eggs",
-          caption: "Every egg undergoes thorough quality inspection",
+          src: "/third.jpg",
+          alt: "Learning about crop cultivation",
+          caption: "Understanding the process of growing healthy crops",
         },
         {
-          src: "https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg",
-          alt: "Egg sorting and grading",
-          caption: "Careful sorting by size and quality standards",
+          src: "/nine.jpg",
+          alt: "Farm workshop session",
+          caption: "Interactive workshops teaching agricultural skills",
         },
         {
-          src: "https://images.pexels.com/photos/1556707/pexels-photo-1556707.jpeg",
-          alt: "Packaging fresh eggs",
-          caption: "Careful packaging in eco-friendly containers",
+          src: "/fifth.jpg",
+          alt: "Students learning about food production",
+          caption: "Understanding the journey from farm to table",
         },
       ],
     },
     {
       title: "Delivery & Distribution",
-      icon: <Truck className="w-6 h-6" />,
+      icon: <Award className="w-6 h-6" />,
       images: [
         {
-          src: "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg",
+          src: "/delivery-truck-loading-eggs.png",
           alt: "Delivery truck loading eggs",
           caption: "Our refrigerated trucks ensure optimal temperature",
         },
         {
-          src: "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg",
+          src: "/driver-checking-delivery-schedule.png",
           alt: "Driver checking delivery schedule",
           caption: "Punctual delivery schedules for customer satisfaction",
         },
         {
-          src: "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg",
+          src: "/eggs-being-delivered-to-store.png",
           alt: "Eggs being delivered to store",
           caption: "Fresh eggs arriving at retail locations",
         },
         {
-          src: "https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg",
+          src: "/happy-customer-receiving-delivery.png",
           alt: "Happy customer receiving delivery",
           caption: "Direct-to-customer delivery service",
         },
@@ -118,8 +118,8 @@ const GalleryClient = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">Farm Gallery</h1>
           <p className="text-xl text-green-100 max-w-2xl mx-auto">
-            Take a visual journey through Akubuuza Farm. See our free-range chickens, dedicated team, and the care that
-            goes into every egg.
+            Take a visual journey through Akubuuza Farm. See our educational programs, dedicated team, and the memorable
+            experiences we create for visiting schools.
           </p>
         </div>
       </section>
@@ -170,25 +170,27 @@ const GalleryClient = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Akubuuza Farm by the Numbers</h2>
-            <p className="text-green-100 text-lg">Our commitment to excellence reflected in our achievements</p>
+            <p className="text-green-100 text-lg">
+              Our commitment to agricultural education reflected in our achievements
+            </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-yellow-400">5000+</div>
-              <div className="text-green-100">Happy Chickens</div>
+              <div className="text-4xl font-bold text-yellow-400">500+</div>
+              <div className="text-green-100">Students Visited</div>
             </div>
             <div className="space-y-2">
               <div className="text-4xl font-bold text-yellow-400">50</div>
-              <div className="text-green-100">Acres of Land</div>
+              <div className="text-green-100">Acres of Learning</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-yellow-400">1000+</div>
-              <div className="text-green-100">Daily Eggs</div>
+              <div className="text-4xl font-bold text-yellow-400">20+</div>
+              <div className="text-green-100">Partner Schools</div>
             </div>
             <div className="space-y-2">
               <div className="text-4xl font-bold text-yellow-400">25+</div>
-              <div className="text-green-100">Team Members</div>
+              <div className="text-green-100">Educational Programs</div>
             </div>
           </div>
         </div>
@@ -199,20 +201,20 @@ const GalleryClient = () => {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Visit Our Farm</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            We welcome visitors to see our operations firsthand. Schedule a farm tour to experience our sustainable
-            practices and meet our happy chickens.
+            We welcome schools and educational groups to visit our farm. Schedule an educational tour to give your
+            students hands-on learning experiences about sustainable agriculture and farm life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() =>
                 window.open(
-                  "https://wa.me/256700000000?text=Hi! I would like to schedule a farm tour. Please let me know available dates and times.",
+                  "https://wa.me/256784399514?text=Hi! I would like to schedule an educational farm visit for our school. Please let me know available dates and programs.",
                   "_blank",
                 )
               }
               className="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300"
             >
-              Schedule Farm Tour
+              Schedule School Visit
             </button>
             <a
               href="/contact"
