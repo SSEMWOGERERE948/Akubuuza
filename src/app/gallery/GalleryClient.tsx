@@ -83,32 +83,6 @@ const GalleryClient = () => {
         },
       ],
     },
-    {
-      title: "Delivery & Distribution",
-      icon: <Award className="w-6 h-6" />,
-      images: [
-        {
-          src: "/delivery-truck-loading-eggs.png",
-          alt: "Delivery truck loading eggs",
-          caption: "Our refrigerated trucks ensure optimal temperature",
-        },
-        {
-          src: "/driver-checking-delivery-schedule.png",
-          alt: "Driver checking delivery schedule",
-          caption: "Punctual delivery schedules for customer satisfaction",
-        },
-        {
-          src: "/eggs-being-delivered-to-store.png",
-          alt: "Eggs being delivered to store",
-          caption: "Fresh eggs arriving at retail locations",
-        },
-        {
-          src: "/happy-customer-receiving-delivery.png",
-          alt: "Happy customer receiving delivery",
-          caption: "Direct-to-customer delivery service",
-        },
-      ],
-    },
   ]
 
   return (

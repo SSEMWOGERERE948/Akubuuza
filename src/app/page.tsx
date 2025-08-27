@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ShoppingCart, Leaf, Award, Users, ArrowRight, Fish } from "lucide-react"
+import { ShoppingCart, Leaf, Award, Users, ArrowRight } from "lucide-react"
 
 const HomePage = () => {
   const features = [
@@ -20,7 +20,7 @@ const HomePage = () => {
       description: "Three generations of farming expertise dedicated to sustainable agriculture.",
     },
     {
-      icon: <Fish className="w-8 h-8 text-blue-500" />,
+      icon: <Leaf className="w-8 h-8 text-green-600" />,
       title: "Future Growth",
       description: "Expanding into aquaculture with planned fish ponds for complete farm-to-table experience.",
     },
@@ -31,13 +31,7 @@ const HomePage = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image
-            src="/four.jpg"
-            alt="Diversified farming at Akubuuza Farm"
-            fill
-            className="object-cover"
-            priority
-          />
+          <Image src="/four.jpg" alt="Diversified farming at Akubuuza Farm" fill className="object-cover" priority />
           <div className="absolute inset-0 hero-gradient" />
         </div>
 
@@ -50,7 +44,7 @@ const HomePage = () => {
             <span className="block text-green-400 text-2xl sm:text-3xl mt-2">from Akubuuza Farm</span>
           </h1>
           <p className="text-xl sm:text-2xl mb-8 text-green-100 max-w-2xl mx-auto">
-            Premium Hass avocados, fresh eggs from Netherlands chickens, and soon - fresh fish from our own ponds.
+            Premium Hass avocados, fresh eggs, and green paper.
             Diversified sustainable farming for healthier families.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -121,7 +115,6 @@ const HomePage = () => {
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Hass Avocados</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">Fresh, creamy avocados perfect for every meal</p>
               <div className="flex justify-between items-center">
-                <span className="text-2xl font-bold text-green-600">ugx1000/each</span>
                 <Link href="/products" className="text-green-600 hover:text-green-700 font-medium">
                   View Details →
                 </Link>
@@ -142,7 +135,6 @@ const HomePage = () => {
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">Premium eggs from imported Netherlands chickens</p>
               <div className="flex justify-between items-center">
-                <span className="text-2xl font-bold text-green-600">ugx12000/tray</span>
                 <Link href="/products" className="text-green-600 hover:text-green-700 font-medium">
                   View Details →
                 </Link>
@@ -151,20 +143,20 @@ const HomePage = () => {
 
             {/* Bulk Supply */}
             <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 card-shadow hover:shadow-xl transition-all duration-300">
-              <div className="h-48 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-lg mb-6 flex items-center justify-center">
+              <div className="h-48 bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-6 flex items-center justify-center">
                 <div className="text-center text-white">
-                  <Fish className="w-16 h-16 mx-auto mb-2" />
-                  <span className="text-lg font-semibold">Coming Soon</span>
+                  <Leaf className="w-16 h-16 mx-auto mb-2" />
+                  <span className="text-lg font-semibold">Fresh Grown</span>
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Fresh Fish</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Green Paper Plant</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-                From our planned fish ponds - sustainable aquaculture
+                Fresh green paper plants grown sustainably on our farm
               </p>
               <div className="flex justify-between items-center">
-                <span className="text-2xl font-bold text-blue-600">Coming Soon</span>
-                <Link href="/contact" className="text-blue-600 hover:text-blue-700 font-medium">
-                  Get Updates →
+                <span className="text-2xl font-bold text-green-600">Available</span>
+                <Link href="/products" className="text-green-600 hover:text-green-700 font-medium">
+                  View Details →
                 </Link>
               </div>
             </div>

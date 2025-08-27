@@ -8,8 +8,6 @@ const ProductsClient = () => {
     {
       id: 1,
       name: "Premium Hass Avocados",
-      price: "ugx1000",
-      originalPrice: "ugx1500",
       description:
         "Fresh, creamy Hass avocados grown on our farm. Perfect ripeness guaranteed for optimal taste and nutrition.",
       image: "/hass_ovacado.jpeg",
@@ -27,14 +25,11 @@ const ProductsClient = () => {
     {
       id: 2,
       name: "Fresh Farm Eggs (30 count)",
-      price: "ugx12000",
-      originalPrice: "ugx15000",
-      description:
-        "Premium eggs from our Netherlands breed chickens. Free-range, healthy birds producing nutritious eggs daily.",
+      description: "Premium eggs from our free-range chickens. Healthy birds producing nutritious eggs daily.",
       image: "/egg.jpeg",
       features: [
         "30 fresh free-range eggs",
-        "Netherlands breed chickens",
+        "Free-range chickens",
         "Collected within 24 hours",
         "No antibiotics or hormones",
         "Superior nutrition profile",
@@ -45,28 +40,24 @@ const ProductsClient = () => {
     },
     {
       id: 3,
-      name: "Fresh Fish (Coming Soon)",
-      price: "Contact for Pre-order",
-      originalPrice: null,
+      name: "Green Paper Plant",
       description:
-        "Fresh fish from our upcoming aquaculture ponds. Sustainable farming practices for healthy, delicious fish.",
-      image: "/fish.jpg",
+        "Fresh green paper plants grown sustainably on our farm. Perfect for traditional cooking and medicinal uses.",
+      image: "/green.jpeg",
       features: [
-        "Sustainable aquaculture",
-        "Fresh water fish varieties",
-        "Chemical-free environment",
-        "Locally farmed",
-        "Pre-order available",
+        "Organically grown green paper",
+        "Fresh harvested daily",
+        "Chemical-free cultivation",
+        "Traditional medicinal plant",
+        "Sustainable farming practices",
       ],
-      availability: "Coming Soon",
-      rating: 0,
-      reviews: 0,
+      availability: "In Stock",
+      rating: 4.6,
+      reviews: 45,
     },
     {
       id: 4,
       name: "Avocado Bundle (12 pieces)",
-      price: "ugx11000",
-      originalPrice: "ugx12000",
       description: "Perfect for families and small businesses. A dozen premium Hass avocados at bulk pricing.",
       image: "/ova.jpeg",
       features: [
@@ -83,14 +74,12 @@ const ProductsClient = () => {
     {
       id: 5,
       name: "Farm Eggs Half Tray (15 count)",
-      price: "ugx12000",
-      originalPrice: "ugx15000",
-      description: "Perfect portion for smaller households. Same premium quality from our Netherlands breed chickens.",
+      description: "Perfect portion for smaller households. Same premium quality from our free-range chickens.",
       image: "/half.jpeg",
       features: [
         "15 fresh free-range eggs",
         "Perfect for small families",
-        "Netherlands breed quality",
+        "Premium free-range quality",
         "Daily fresh collection",
         "Eco-friendly packaging",
       ],
@@ -101,10 +90,8 @@ const ProductsClient = () => {
     {
       id: 6,
       name: "Bulk Supply (Custom Orders)",
-      price: "Contact for Quote",
-      originalPrice: null,
       description:
-        "Custom orders for restaurants, hotels, and businesses. Avocados, eggs, and fish available in bulk quantities.",
+        "Custom orders for restaurants, hotels, and businesses. Avocados, eggs, and green paper available in bulk quantities.",
       image: "/egg-ova.jpeg",
       features: [
         "Custom quantities available",
@@ -139,8 +126,8 @@ const ProductsClient = () => {
 
   const whatsappNumber = "256784399514"
 
-  const handleWhatsAppOrder = (productName: string, price: string) => {
-    const message = `Hi! I'd like to order ${productName} for ${price}. Please provide delivery details.`
+  const handleWhatsAppOrder = (productName: string) => {
+    const message = `Hi! I'd like to order ${productName}. Please provide pricing and delivery details.`
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, "_blank")
   }
@@ -152,8 +139,8 @@ const ProductsClient = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">Fresh Farm Products</h1>
           <p className="text-xl text-green-100 max-w-2xl mx-auto">
-            Premium Hass avocados, fresh eggs from Netherlands chickens, and sustainable fish farming. All delivered
-            fresh to your doorstep.
+            Premium Hass avocados, fresh eggs from free-range chickens, and green paper plants. All delivered fresh to
+            your doorstep.
           </p>
         </div>
       </section>
@@ -197,18 +184,6 @@ const ProductsClient = () => {
                       Limited Stock
                     </div>
                   )}
-                  {product.originalPrice && product.price !== "Contact for Quote" && (
-                    <div className="absolute top-4 left-4 bg-red-500 text-white px-2 py-1 rounded text-sm font-semibold">
-                      Save{" "}
-                      {(
-                        ((Number.parseFloat(product.originalPrice.replace("$", "")) -
-                          Number.parseFloat(product.price.replace("$", ""))) /
-                          Number.parseFloat(product.originalPrice.replace("$", ""))) *
-                        100
-                      ).toFixed(0)}
-                      %
-                    </div>
-                  )}
                 </div>
 
                 <div className="p-6">
@@ -235,13 +210,7 @@ const ProductsClient = () => {
                     </ul>
                   </div>
 
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center space-x-2">
-                      <span className="text-2xl font-bold text-green-600">{product.price}</span>
-                      {product.originalPrice && (
-                        <span className="text-lg text-gray-500 line-through">{product.originalPrice}</span>
-                      )}
-                    </div>
+                  <div className="flex items-center justify-end mb-4">
                     <span
                       className={`text-sm px-2 py-1 rounded ${
                         product.availability === "In Stock"
@@ -256,12 +225,12 @@ const ProductsClient = () => {
                   </div>
 
                   <button
-                    onClick={() => handleWhatsAppOrder(product.name, product.price)}
+                    onClick={() => handleWhatsAppOrder(product.name)}
                     disabled={product.availability === "Limited Stock" && Math.random() > 0.7}
                     className="w-full bg-green-600 hover:bg-green-700 disabled:bg-gray-400 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2"
                   >
                     <ShoppingCart className="w-5 h-5" />
-                    <span>{product.price === "Contact for Quote" ? "Get Quote" : "Order via WhatsApp"}</span>
+                    <span>{product.availability === "Contact Us" ? "Get Quote" : "Order via WhatsApp"}</span>
                   </button>
                 </div>
               </div>
@@ -287,7 +256,7 @@ const ProductsClient = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Sustainable Farming</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                From avocado groves to free-range chickens and planned aquaculture, we practice sustainable farming
+                From avocado groves to free-range chickens and green paper cultivation, we practice sustainable farming
                 across all operations.
               </p>
             </div>
@@ -309,8 +278,8 @@ const ProductsClient = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Farm Fresh Daily</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Avocados picked at perfect ripeness, eggs collected daily, ensuring maximum freshness and nutrition in
-                every product.
+                Avocados picked at perfect ripeness, eggs collected daily, and green paper harvested fresh, ensuring
+                maximum freshness and nutrition in every product.
               </p>
             </div>
           </div>
@@ -322,7 +291,7 @@ const ProductsClient = () => {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-4">Ready to Order Fresh Farm Products?</h2>
           <p className="text-xl mb-8 text-green-100">
-            Contact us via WhatsApp for quick ordering of avocados, eggs, and upcoming fish products.
+            Contact us via WhatsApp for quick ordering of avocados, eggs, and green paper plants.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
