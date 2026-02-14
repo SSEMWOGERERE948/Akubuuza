@@ -10,7 +10,7 @@ const ProductsClient = () => {
       name: "Premium Hass Avocados",
       description:
         "Fresh, creamy Hass avocados grown on our farm. Perfect ripeness guaranteed for optimal taste and nutrition.",
-      image: "/hass_ovacado.jpeg",
+      image: "/hass.jpeg",
       features: [
         "Locally grown Hass variety",
         "Perfect ripeness selection",
@@ -26,7 +26,7 @@ const ProductsClient = () => {
       id: 2,
       name: "Fresh Farm Eggs (30 count)",
       description: "Premium eggs from our free-range chickens. Healthy birds producing nutritious eggs daily.",
-      image: "/egg.jpeg",
+      image: "/eg.jpeg",
       features: [
         "30 fresh free-range eggs",
         "Free-range chickens",
@@ -59,7 +59,7 @@ const ProductsClient = () => {
       id: 4,
       name: "Avocado Bundle (12 pieces)",
       description: "Perfect for families and small businesses. A dozen premium Hass avocados at bulk pricing.",
-      image: "/ova.jpeg",
+      image: "/hass.jpeg",
       features: [
         "12 premium Hass avocados",
         "Bulk discount applied",
@@ -75,7 +75,7 @@ const ProductsClient = () => {
       id: 5,
       name: "Farm Eggs Half Tray (15 count)",
       description: "Perfect portion for smaller households. Same premium quality from our free-range chickens.",
-      image: "/half.jpeg",
+      image: "/eg2.jpeg",
       features: [
         "15 fresh free-range eggs",
         "Perfect for small families",
