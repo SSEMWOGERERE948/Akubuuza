@@ -89,7 +89,7 @@ const AboutPage = () => {
             </div>
             <div className="relative">
               <Image  
-                src="/one.jpg"
+                src="/esther.jpeg"
                 alt="Esther Mbayo Mbulakubuza and farm operations"
                 width={600}
                 height={400}
